@@ -1,0 +1,12 @@
+/node_modules
+*.log
+.DS_Store
+.idea
+.idea/*
+.tmp
+.tmp/
+.vscode
+/logs/
+/lib
+/es
+/build

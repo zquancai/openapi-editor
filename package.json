@@ -1,0 +1,70 @@
+{
+  "name": "openapi-editor",
+  "version": "0.0.1",
+  "description": "openapi-editor",
+  "keywords": [
+    "react",
+    "openapi",
+    "swagger",
+    "openapi-editor"
+  ],
+  "homepage": "https://github.com/react-component/egg-typed-sdk",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zquancai/openapi-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zquancai/openapi-editor/issues"
+  },
+  "files": [
+    "lib",
+    "es",
+    "dist"
+  ],
+  "licenses": "MIT",
+  "main": "./lib/index",
+  "module": "./es/index",
+  "scripts": {
+    "watch-tsc": "rc-tools run watch-tsc",
+    "build": "rc-tools run build",
+    "dist": "rc-tools run dist",
+    "gh-pages": "rc-tools run gh-pages",
+    "start": "rc-tools run server",
+    "compile": "rc-tools run compile --babel-runtime",
+    "pub": "rc-tools run pub --babel-runtime",
+    "lint": "rc-tools run lint --no-js-lint",
+    "karma": "rc-test run karma",
+    "saucelabs": "rc-test run saucelabs",
+    "test": "rc-test run test",
+    "chrome-test": "rc-test run chrome-test",
+    "coverage": "rc-test run coverage"
+  },
+  "dependencies": {
+    "antd": "^3.4.0",
+    "json-schema-editor-visual": "^1.0.21",
+    "lodash": "^4.17.11",
+    "openapi-types": "^1.3.2"
+  },
+  "devDependencies": {
+    "@types/mocha": "~2.2.32",
+    "@types/react": "^16.0.19",
+    "@types/react-dom": "^16.0.2",
+    "@types/crypto-js": "^3.1.39",
+    "@types/json-stable-stringify": "^1.0.32",
+    "async": "^0.9.0",
+    "bluebird": "~2.9.30",
+    "bootstrap": "^3.3.6",
+    "core-js": "^2.5.1",
+    "expect.js": "~0.3.1",
+    "jquery": "^1.11.2",
+    "pre-commit": "1.x",
+    "rc-test": "^6.0.1",
+    "rc-tools": "7.x",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "typings": "./lib/index.d.ts",
+  "pre-commit": [
+    "lint"
+  ]
+}
